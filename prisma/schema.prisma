@@ -2,7 +2,7 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 datasource db {
   provider = "mysql"
-  url      = "mysql://barreloft_root:Gosparuf2k.2020@72.29.91.138:3306/barreloft_backend"
+  url      = env("DATABASE_URL")
 }
 
 generator client {
